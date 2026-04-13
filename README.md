@@ -76,7 +76,6 @@ For each process:
 - completionTime
 - whether completionTime <= deadline
 
-
 ### Example Output
 | ID | Arrival | Burst | Deadline | Completion | Met Deadline |
 |----|---------|-------|----------|-------------|--------------|
@@ -85,11 +84,32 @@ For each process:
 | 2  | 0       | 20    | 40       | 275         | NO           |
 | ...| ...     | ...   | ...      | ...         | ...          |
 
-The output shows that Shortest Remaining Time First efficiently completes short processes quickly, but significantly delays longer processes, leading to many missed deadlines due to frequent preemption.
+Each row in the output represents one process. The columns show how that process behaves in the CPU scheduling simulation.
 
-Essentially:
-- fast for smaller jobs
-- significant delay for larger jobes
+### ID
+- The unique identifier of the process.
+- Each process is assigned a number starting from 0 to 99.
+
+### Arrival
+- The time at which the process enters the system.
+- A process can only be scheduled after its arrival time.
+
+### Burst
+- The total amount of CPU time required for the process to complete.
+- In this simulation, it is stored as burstTime, and it is copied into remainingTime when the process starts.
+
+### Deadline
+- The time by which the process is expected to finish.
+- It is calculated when the process is created and is used to evaluate whether the process finishes on time.
+
+### Completion
+- The time at which the process actually finishes execution.
+- A process is marked complete when its remainingTime reaches 0.
+
+### Met Deadline
+- Indicates whether the process finished before or at its deadline.
+  - YES → completionTime <= deadline
+  - NO → completionTime > deadline
 
 ---
 
