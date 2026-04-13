@@ -1,7 +1,7 @@
 # CPU Scheduling Simulation (Preemptive SJN)
 
 ## Course
-CUS 1163 – Operating Systems • St. John's University
+St. John's University  •  CUS 1163  •  Operating Systems 
 
 ---
 
