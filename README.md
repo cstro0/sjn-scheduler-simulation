@@ -2,6 +2,7 @@
 
 ## Course
 CUS 1163 – Operating Systems
+St. John's University
 
 ---
 
