@@ -85,6 +85,12 @@ For each process:
 | 2  | 0       | 20    | 40       | 275         | NO           |
 | ...| ...     | ...   | ...      | ...         | ...          |
 
+The output shows that Shortest Remaining Time First efficiently completes short processes quickly, but significantly delays longer processes, leading to many missed deadlines due to frequent preemption.
+
+Essentially:
+- fast for smaller jobs
+- significant delay for larger jobes
+
 ---
 
 ## Key Features
